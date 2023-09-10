@@ -1,0 +1,123 @@
+body {
+  /**  margin: 0 auto; 
+overflow-y: scroll; I couldn't remove the scorllbar 
+without compromising the display **/
+  background-image: linear-gradient(#508484, #142b12);
+  height: 100vh;
+  color: white;
+  font-family: "Trebuchet MS", sans-serif, Geneva, Tahoma;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h1,
+h2 {
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+h1 {
+  font-size: 1.4em;
+}
+h2 {
+  font-size: 1em;
+  font-weight: normal;
+}
+#cover-container {
+  display: flex;
+  align-items: center;
+  min-height: 340px;
+}
+
+button {
+  background: inherit;
+  border: none;
+  color: inherit;
+}
+#below-cover {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0.9em;
+}
+
+#button-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+#playlist-title {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: 1em 0 2em 0;
+}
+
+#cover {
+  width: 320px;
+  border: 4px solid white;
+  -webkit-box-shadow: 1px 4px 8px 0px rgba(0, 0, 0, 0.64);
+  -moz-box-shadow: 1px 4px 8px 0px rgba(0, 0, 0, 0.64);
+  box-shadow: 1px 4px 8px 0px rgba(0, 0, 0, 0.64);
+}
+
+.button {
+  font-size: 1.5em;
+  cursor: pointer;
+}
+
+.button-navigate {
+  font-size: 3em;
+}
+
+.button-biggest {
+  font-size: 3em;
+}
+
+#song-name {
+  font-size: 1.3em;
+  font-weight: bold;
+}
+
+#band-name {
+  font-size: 1em;
+}
+
+.light-color {
+  color: rgb(139, 153, 156);
+}
+
+#progress-container {
+  cursor: pointer;
+}
+
+#progress-bar {
+  background-color: rgb(139, 153, 156);
+  height: 3px;
+  width: 100%;
+  border-radius: 15px;
+}
+
+#current-progress {
+  --progress: 0%;
+  background-color: #ffffff;
+  border-radius: inherit;
+  height: inherit;
+  width: var(--progress);
+}
+
+.button-active {
+  color: rgb(0, 128, 62);
+}
+
+#time-box {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  font-size: smaller;
+  margin: 0.5em;
+}
